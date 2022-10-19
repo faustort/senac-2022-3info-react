@@ -1,5 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { Home } from "../screens/Home";
+import { Login } from "../screens/Login";
+import { Register } from "../screens/Register";
 import { Sobre } from "../screens/Sobre";
 
 // Simboliza a instância do Stack
@@ -23,11 +25,11 @@ export const RootNavigation = () => {
             />
             <Stack.Screen
                 name="Registro"
-                component={Sobre}
+                component={Register}
             />
             <Stack.Screen
                 name="Login"
-                component={Sobre}
+                component={Login}
             />
         </Stack.Navigator>
     )

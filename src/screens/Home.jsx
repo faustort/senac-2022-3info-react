@@ -15,5 +15,9 @@ export const Home = ({ navigation }) => (
             title="Vamos para Registro?"
             onPress={() => navigation.navigate("Registro")}
         />
+        <Button
+            title="Vamos para Login"
+            onPress={() => navigation.navigate("Login")}
+        />
     </View>
 )
