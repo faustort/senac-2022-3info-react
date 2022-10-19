@@ -1,11 +1,14 @@
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { Home } from "../screens/Home";
 import { Login } from "../screens/Login";
 import { Register } from "../screens/Register";
 import { Sobre } from "../screens/Sobre";
 
+// // Simboliza a instância do Stack
+// const Stack = createNativeStackNavigator();
 // Simboliza a instância do Stack
-const Stack = createNativeStackNavigator();
+const Stack = createMaterialBottomTabNavigator();
 
 // Componente base
 export const RootNavigation = () => {
