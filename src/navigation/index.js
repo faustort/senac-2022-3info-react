@@ -56,13 +56,19 @@ export const RootNavigation = () => {
                 options={{
                     tabBarLabel: 'Registro',
                     tabBarIcon: ({ color }) => (
-                        <MaterialCommunityIcons name="box-minus-outline" color={color} size={26} />
+                        <MaterialCommunityIcons name="account" color={color} size={26} />
                     ),
                 }}
             />
             <MBNav.Screen
                 name="Login"
                 component={Login}
+                options={{
+                    tabBarLabel: 'Login',
+                    tabBarIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="account" color={color} size={26} />
+                    ),
+                }}
             />
         </MBNav.Navigator>
     )
