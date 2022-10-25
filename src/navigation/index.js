@@ -14,12 +14,14 @@ const MBNav = createMaterialBottomTabNavigator();
 // Componente base
 export const RootNavigation = () => {
     return (
-        <MBNav.Navigator>
+        <MBNav.Navigator
+            activeColor="#fff"
+            inactiveColor="tomato"
+
+        >
             <MBNav.Screen
                 name="Home"
                 component={Home}
-                activeColor="#fff"
-                inactiveColor="tomato"
             />
             <MBNav.Screen
                 name="Sobre"
