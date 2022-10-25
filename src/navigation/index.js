@@ -8,33 +8,38 @@ import { Sobre } from "../screens/Sobre";
 // // Simboliza a instância do Stack
 // const Stack = createNativeStackNavigator();
 // Simboliza a instância do Stack
-const Stack = createMaterialBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+const MBNav = createMaterialBottomTabNavigator();
 
 // Componente base
 export const RootNavigation = () => {
     return (
-        <Stack.Navigator>
-            <Stack.Screen
+        <MBNav.Navigator>
+            <MBNav.Screen
                 name="Home"
                 component={Home}
+                activeColor="#fff"
+                inactiveColor="tomato"
             />
-            <Stack.Screen
+            <MBNav.Screen
                 name="Sobre"
                 component={Sobre}
+
             />
-            <Stack.Screen
+            <MBNav.Screen
                 name="Contato"
                 component={Sobre}
+
             />
-            <Stack.Screen
+            <MBNav.Screen
                 name="Registro"
                 component={Register}
             />
-            <Stack.Screen
+            <MBNav.Screen
                 name="Login"
                 component={Login}
             />
-        </Stack.Navigator>
+        </MBNav.Navigator>
     )
 }
 
