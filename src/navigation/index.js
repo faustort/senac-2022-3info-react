@@ -56,7 +56,7 @@ export const RootNavigation = () => {
                 options={{
                     tabBarLabel: 'Registro',
                     tabBarIcon: ({ color }) => (
-                        <MaterialCommunityIcons name="account" color={color} size={26} />
+                        <MaterialCommunityIcons name="android" color={color} size={26} />
                     ),
                 }}
             />
@@ -73,5 +73,3 @@ export const RootNavigation = () => {
         </MBNav.Navigator>
     )
 }
-
-
